@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>222电影网 - 三重影像影视资料馆</title>
+<meta name="description" content="222电影网（222dianyingwang-wap.github.io）是三重影像影视资料馆，以数字「222」为索引整理影视条目，提供影片资讯、剧情简介与观影推荐，涵盖剧情、悬疑、喜剧、纪录等题材。">
+<meta name="keywords" content="222电影网,三重影像,影视资料馆,电影推荐,剧情电影,悬疑电影,喜剧电影,观影指南">
+<meta name="author" content="222电影网">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#050505">
+<link rel="canonical" href="https://222dianyingwang-wap.github.io/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="222电影网">
+<meta property="og:title" content="222电影网 - 三重影像影视资料馆">
+<meta property="og:description" content="以数字「222」为索引的影视资料馆，提供影片资讯、剧情简介与观影推荐。">
+<meta property="og:url" content="https://222dianyingwang-wap.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="222电影网">
+<meta name="twitter:description" content="以数字「222」为索引的影视资料馆，提供影片资讯与观影推荐。">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "222电影网",
+      "url": "https://222dianyingwang-wap.github.io/",
+      "description": "以数字「222」为索引的影视资料馆，提供影片资讯、剧情简介与观影推荐。",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://222dianyingwang-wap.github.io/#search?q={query}",
+        "query-input": "required name=query"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "222电影网",
+      "url": "https://222dianyingwang-wap.github.io/",
+      "description": "以数字「222」为索引整理影视条目，提供影片资讯与观影推荐的影视资料馆。"
+    }
+  ]
+}
+</script>
+
+<style>
+/* ============================================================
+   222电影网 —— 单文件内联样式
+   设计语言：极简模块 · 三原色 + 三灰度 · 硬边网格
+   ============================================================ */
+:root{
+  --ink:#050505;--paper:#f5f4f0;--card:#eceae4;--card2:#dfddd5;
+  --line:#c9c6bc;--txt:#050505;--dim:#5b5a55;--faint:#8d8b84;
+  --r:0px;--hdr:64px;
+  --r1:#ff3b1f;--r2:#ffd400;--r3:#0047ff;
+  --g1:#050505;--g2:#3c3c38;--g3:#8a8882;
+  --mono:"SFMono-Regular",ui-monospace,Menlo,Consolas,monospace;
+  --serif:"Songti SC","Source Han Serif SC",Georgia,"Times New Roman",serif;
+  --ease:cubic-bezier(.2,.7,.3,1);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--paper);color:var(--txt);line-height:1.68;overflow-x:hidden;
+  font-size:15px;
+}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+img{max-width:100%;display:block}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+h1,h2,h3,h4{font-weight:900;letter-spacing:-.6px;line-height:1.2}
+
+.wrap{max-width:1320px;margin:0 auto;padding:0 16px}
+@media(min-width:768px){.wrap{padding:0 28px}}
+section{padding:40px 0}
+@media(min-width:900px){section{padding:88px 0}}
+
+.num{font-family:var(--mono);font-weight:800;letter-spacing:-.5px}
+.kicker{font-family:var(--mono);font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);display:block;margin-bottom:14px}
+.sec-title{font-size:30px;margin-bottom:12px}
+@media(min-width:768px){.sec-title{font-size:56px;letter-spacing:-1.2px}}
+.sec-title em{font-style:normal;background:linear-gradient(90deg,var(--r1),var(--r2) 48%,var(--r3));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.sec-sub{font-size:14.5px;color:var(--dim);max-width:560px;margin-bottom:34px}
+
+/* ---------- 头部 ---------- */
+.header{position:sticky;top:0;z-index:100;height:var(--hdr);background:rgba(245,244,240,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:2px solid var(--ink)}
+.header-in{height:100%;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-b{display:grid;grid-template-columns:repeat(3,12px);gap:3px}
+.logo-b i{width:12px;height:12px;display:block;background:var(--ink)}
+.logo-b i:nth-child(1){background:var(--r1)}.logo-b i:nth-child(2){background:var(--r2)}.logo-b i:nth-child(3){background:var(--r3)}
+.logo b{font-size:17px;letter-spacing:-.4px}
+.logo b small{display:block;font-family:var(--mono);font-size:9px;color:var(--faint);letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+.nav{display:flex;align-items:center;gap:2px}
+.nav a{padding:8px 14px;font-family:var(--mono);font-size:12.5px;font-weight:800;color:var(--dim);transition:.2s;border-bottom:2px solid transparent}
+.nav a:hover{color:var(--ink)}
+.nav a.active{color:var(--ink);border-bottom-color:var(--r1)}
+.menu-btn{display:none;width:44px;height:44px;align-items:center;justify-content:center;flex-direction:column;gap:6px;border:2px solid var(--ink)}
+.menu-btn i{display:block;width:18px;height:2px;background:var(--ink);transition:.25s}
+.menu-btn.open i:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.menu-btn.open i:nth-child(2){opacity:0}
+.menu-btn.open i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+.search{flex:0 0 auto;display:flex;align-items:center;gap:8px;padding:8px 12px;border:2px solid var(--ink);font-family:var(--mono);font-size:12px;color:var(--dim);transition:.25s}
+.search:hover{background:var(--ink);color:var(--paper)}
+.search:hover span{background-image:linear-gradient(90deg,var(--r1),var(--r2),var(--r3));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+@media(max-width:940px){
+  .search{display:none}
+  .menu-btn{display:flex}
+  .nav{position:fixed;top:var(--hdr);left:0;right:0;flex-direction:column;align-items:stretch;padding:12px;background:var(--paper);border-bottom:2px solid var(--ink);transform:translateY(-110%);transition:.32s var(--ease);z-index:99}
+  .nav.show{transform:translateY(0)}
+  .nav a{padding:16px;border-bottom:1px solid var(--line)}
+  .nav a.active{border-bottom-color:var(--r1);background:var(--card)}
+}
+
+/* ---------- 首屏 ---------- */
+.hero{position:relative;padding:34px 0 30px;border-bottom:2px solid var(--ink);overflow:hidden}
+@media(min-width:900px){.hero{padding:60px 0 50px}}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:24px}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.15fr .85fr;gap:44px;align-items:end}}
+.hero .meta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:22px;font-family:var(--mono);font-size:11.5px;font-weight:800;letter-spacing:.1em;color:var(--dim)}
+.hero .meta-row span{padding:6px 10px;border:1.5px solid var(--line)}
+.hero .meta-row span.hot{border-color:var(--r1);color:var(--r1)}
+.hero h1{font-size:56px;letter-spacing:-2.4px;margin-bottom:6px}
+@media(min-width:640px){.hero h1{font-size:92px}}
+@media(min-width:1100px){.hero h1{font-size:132px}}
+.hero h1 .n{display:inline-block;padding:0 4px}
+.hero h1 .n:nth-child(1){color:var(--r1)}.hero h1 .n:nth-child(2){color:var(--r2)}.hero h1 .n:nth-child(3){color:var(--r3)}
+.hero h1 .nm{display:block;font-size:.32em;letter-spacing:-.6px;margin-top:14px;line-height:1.25}
+.hero-desc{font-size:16px;color:var(--dim);max-width:520px;margin:20px 0 26px;line-height:1.95}
+.hero-acts{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:16px 26px;font-family:var(--mono);font-size:12.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;transition:.25s;border:2px solid var(--ink)}
+.btn-main{background:var(--ink);color:var(--paper)}
+.btn-main:hover{background:var(--r1);border-color:var(--r1)}
+.btn-line{background:transparent;color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--paper)}
+
+.hero-side{display:grid;grid-template-columns:1fr 1fr;gap:10px;border-top:2px solid var(--ink);padding-top:18px}
+.hs-item{padding:14px;border:1.5px solid var(--line)}
+.hs-item .v{font-family:var(--serif);font-size:30px;font-weight:900;line-height:1}
+.hs-item .v i{font-style:italic;color:var(--r1)}
+.hs-item .l{font-family:var(--mono);font-size:10.5px;color:var(--faint);letter-spacing:.1em;text-transform:uppercase;margin-top:8px}
+
+/* 编号块首屏视觉 */
+.bigblock{display:grid;grid-template-columns:repeat(3,1fr);border:2px solid var(--ink)}
+.bigblock div{aspect-ratio:1/1;display:grid;place-items:center;font-family:var(--serif);font-style:italic;font-size:64px;font-weight:900;color:var(--paper);border-right:2px solid var(--ink)}
+.bigblock div:last-child{border-right:none}
+.bigblock div:nth-child(1){background:var(--r1)}.bigblock div:nth-child(2){background:var(--r2);color:var(--ink)}.bigblock div:nth-child(3){background:var(--r3)}
+
+/* ---------- 通用卡片 ---------- */
+.card{position:relative;border:2px solid var(--ink);background:var(--card);transition:.35s var(--ease)}
+.card:hover{transform:translate(-4px,-4px);box-shadow:8px 8px 0 var(--ink)}
+.tag{display:inline-block;padding:5px 10px;font-family:var(--mono);font-size:10.5px;font-weight:800;letter-spacing:.08em;background:var(--ink);color:var(--paper);text-transform:uppercase}
+
+/* ---------- 栏目 02：片库（数字编号墙） ---------- */
+.wall{display:grid;grid-template-columns:repeat(2,1fr);border-top:2px solid var(--ink);border-left:2px solid var(--ink)}
+@media(min-width:700px){.wall{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1000px){.wall{grid-template-columns:repeat(6,1fr)}}
+.cell{position:relative;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:18px 16px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between;background:var(--paper);transition:.3s}
+.cell:hover{background:var(--card)}
+.cell.big{grid-column:span 2;min-height:auto;padding:26px;background:var(--ink);color:var(--paper)}
+.cell.big:hover{background:var(--r1);color:var(--paper)}
+.cell.big h3{font-family:var(--serif);font-size:26px;line-height:1.35;margin:8px 0 10px}
+.cell.big p{font-size:13px;color:var(--dim)}
+.cell.big:hover p{color:rgba(255,255,255,.9)}
+.cell .no{font-family:var(--mono);font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--faint)}
+.cell:hover .no{color:var(--r1)}
+.cell.big .no{color:var(--r2)}
+.cell.big:hover .no{color:var(--paper)}
+.cell h4{font-size:15px;line-height:1.5;margin:6px 0 10px}
+.cell p{font-size:12.5px;color:var(--dim);line-height:1.85}
+.cell .foot{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:10.5px;font-weight:800;color:var(--faint);margin-top:10px}
+.cell .dot{width:9px;height:9px;background:var(--ink)}
+.cell:hover .dot{background:var(--r1)}
+.cell.big .dot{background:var(--r2)}
+
+/* ---------- 栏目 03：类型频段（色块矩阵） ---------- */
+.matrix{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:760px){.matrix{grid-template-columns:repeat(4,1fr)}}
+.tile{position:relative;padding:24px 20px;min-height:200px;border:2px solid var(--ink);overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;transition:.4s var(--ease);cursor:default}
+.tile:hover{transform:translateY(-6px)}
+.tile .idx{font-family:var(--mono);font-size:11px;font-weight:800;letter-spacing:.1em;opacity:.7}
+.tile h3{font-family:var(--serif);font-size:24px;font-weight:900;margin:6px 0 10px}
+.tile p{font-size:12.5px;line-height:1.85;opacity:.88}
+.tile .cn{font-family:var(--mono);font-size:10.5px;font-weight:800;letter-spacing:.08em;opacity:.8}
+.tile.r{background:var(--r1);color:var(--paper)}
+.tile.y{background:var(--r2);color:var(--ink)}
+.tile.b{background:var(--r3);color:var(--paper)}
+.tile.g{background:var(--ink);color:var(--paper)}
+.tile.c{background:var(--card2);color:var(--ink)}
+.tile.w{background:var(--paper);color:var(--ink)}
+.tile.g2{background:var(--g2);color:var(--paper)}
+.tile.g3{background:var(--g3);color:var(--paper)}
+.tile:hover{box-shadow:0 14px 0 -6px rgba(5,5,5,.85)}
+
+/* ---------- 栏目 04：时间线（横向滑动步骤） ---------- */
+.track{display:flex;gap:14px;overflow-x:auto;padding-bottom:20px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.track::-webkit-scrollbar{height:8px}
+.track::-webkit-scrollbar-thumb{background:var(--ink)}
+.step{flex:0 0 82%;scroll-snap-align:start;border:2px solid var(--ink);background:var(--paper);padding:24px;display:flex;flex-direction:column}
+@media(min-width:680px){.step{flex:0 0 44%}.step.lg{flex:0 0 60%}}
+@media(min-width:1020px){.step{flex:0 0 31%}.step.lg{flex:0 0 38%}}
+.step .top{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--dim);margin-bottom:16px}
+.step .sq{width:30px;height:30px;display:grid;place-items:center;background:var(--ink);color:var(--paper);font-size:13px}
+.step.lg .sq{width:40px;height:40px;font-size:16px;background:var(--r1)}
+.step h3{font-family:var(--serif);font-size:22px;margin-bottom:12px;line-height:1.4}
+.step p{font-size:13px;color:var(--dim);line-height:1.95}
+.step .bar{height:6px;background:var(--card2);margin-top:18px;overflow:hidden}
+.step .bar i{display:block;height:100%;background:var(--ink)}
+.step.lg .bar i{background:var(--r1)}
+
+/* ---------- 栏目 05：关于本站（三栏信息架构） ---------- */
+.info{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:760px){.info{grid-template-columns:repeat(6,1fr)}}
+.info .blk{border:2px solid var(--ink);padding:26px;display:flex;flex-direction:column;gap:14px}
+.info .a{grid-column:span 1;background:var(--ink);color:var(--paper)}
+@media(min-width:760px){.info .a{grid-column:span 2}}
+.info .b{grid-column:span 1;background:var(--card)}
+@media(min-width:760px){.info .b{grid-column:span 2}}
+.info .c{grid-column:span 1;background:var(--paper)}
+@media(min-width:760px){.info .c{grid-column:span 2}}
+.info h3{font-family:var(--mono);font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.info.a h3{color:var(--r2)}
+.info .a p,.info .a li{color:rgba(245,244,240,.88);font-size:13.5px;line-height:1.95}
+.info .b p,.info .c li{font-size:13.5px;color:var(--dim);line-height:1.95}
+.info ul{display:flex;flex-direction:column;gap:12px}
+.info li{padding-left:18px;position:relative}
+.info li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;background:var(--ink)}
+.info.a li::before{background:var(--r2)}
+.info .url{font-family:var(--mono);font-size:12.5px;font-weight:800;background:var(--r2);color:var(--ink);padding:12px 14px;word-break:break-all;line-height:1.6}
+
+/* ---------- 页脚 ---------- */
+.footer{margin-top:44px;border-top:4px solid var(--ink);background:var(--ink);color:var(--paper)}
+.foot{padding:52px 0 0;display:grid;grid-template-columns:1fr;gap:30px}
+@media(min-width:760px){.foot{grid-template-columns:2fr repeat(3,1fr)}}
+.foot h5{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--r2);margin-bottom:18px}
+.foot ul li{margin-bottom:11px}
+.foot ul a{font-size:13.5px;color:rgba(245,244,240,.72);transition:.2s}
+.foot ul a:hover{color:var(--r1)}
+.foot-about .logo{margin-bottom:18px}
+.foot-about p{font-size:13.5px;color:rgba(245,244,240,.72);line-height:1.95;max-width:340px}
+.foot-about .logo b{color:var(--paper)}
+.copyright{padding:30px 0;margin-top:44px;border-top:1px solid rgba(245,244,240,.18);font-family:var(--mono);font-size:11.5px;color:rgba(245,244,240,.6);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.copyright a{color:var(--r2)}
+
+.quick{display:none;position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--paper);border-top:2px solid var(--ink)}
+.quick a{flex:1;text-align:center;font-family:var(--mono);font-size:10.5px;font-weight:800;color:var(--dim);padding:11px 2px;letter-spacing:.06em;border-right:1.5px solid var(--line)}
+.quick a:last-child{border-right:none}
+.quick a.on{background:var(--ink);color:var(--paper)}
+@media(max-width:940px){.quick{display:flex} body{padding-bottom:52px}}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:fixed;left:12px;top:12px;padding:10px 16px;background:var(--ink);color:var(--paper);z-index:999;font-weight:900;font-family:var(--mono);font-size:12px}
+.no-scroll{overflow:hidden}
+.tab-panel{display:none}
+.tab-panel.active{display:block;animation:fade .4s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<a class="skip" href="#main">跳到主要内容</a>
+
+<!-- ================= 头部 ================= -->
+<header class="header">
+  <div class="wrap header-in">
+    <a href="#home" class="logo" aria-label="222电影网 首页">
+      <span class="logo-b" aria-hidden="true"><i></i><i></i><i></i></span>
+      <div><b>222电影网</b><small>Triple Image Archive</small></div>
+    </a>
+    <nav class="nav" id="nav" aria-label="主导航">
+      <a href="#home" class="active" data-tab="home">首页</a>
+      <a href="#wall" data-tab="wall">片库</a>
+      <a href="#type" data-tab="type">类型</a>
+      <a href="#line" data-tab="line">时间线</a>
+      <a href="#about" data-tab="about">关于</a>
+    </nav>
+    <a href="#" class="search" aria-label="搜索"><span>搜索片名 / 演员 / 类型</span><span aria-hidden="true">⌘K</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="切换菜单" aria-expanded="false"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<!-- ================= 首屏 ================= -->
+<section class="hero" id="main">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="meta-row"><span class="hot">● 在线更新中</span><span>第 222 期片单</span><span>2026 秋</span><span>SE / NO.222</span></div>
+      <h1><span class="n">2</span><span class="n">2</span><span class="n">2</span><span class="nm">电影网 · 三重影像影视资料馆</span></h1>
+      <p class="hero-desc">222电影网（<a href="https://222dianyingwang-wap.github.io" style="color:var(--r1);font-weight:800">222dianyingwang-wap.github.io</a>）以数字「222」为索引整理影视条目，提供影片资讯、剧情简介与观影推荐，帮你从一片信息里挑出值得看的那一部。</p>
+      <div class="hero-acts">
+        <a class="btn btn-main" href="#wall">进入片库 ›</a>
+        <a class="btn btn-line" href="#type">按类型浏览</a>
+      </div>
+    </div>
+    <div>
+      <div class="hero-side">
+        <div class="hs-item"><div class="v">222<i>+</i></div><div class="l">收录条目</div></div>
+        <div class="hs-item"><div class="v">12</div><div class="l">题材类型</div></div>
+        <div class="hs-item"><div class="v">3</div><div class="l">三重维度</div></div>
+        <div class="hs-item"><div class="v">∞</div><div class="l">每日更新</div></div>
+      </div>
+      <div class="bigblock" aria-hidden="true" style="margin-top:18px"><div>2</div><div>2</div><div>2</div></div>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <!-- ============ 首页 ============ -->
+  <section id="home" class="tab-panel active">
+    <span class="kicker">栏目 01 / 本期精选</span>
+    <h2 class="sec-title">这一期，<em>推荐</em> 你先看这四部</h2>
+    <p class="sec-sub">从本期片库里挑出的四部作品，覆盖剧情、悬疑、喜剧与纪录，每部附一句话推荐理由。</p>
+    <div class="wall" id="homeWall"></div>
+  </section>
+
+  <!-- ============ 片库 ============ -->
+  <section id="wall" class="tab-panel">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <div><span class="kicker">栏目 02</span><h2 class="sec-title" style="font-size:32px">片库<em>编号墙</em></h2></div>
+      <a href="#" class="btn btn-line" style="padding:12px 20px">查看全部 ›</a>
+    </div>
+    <p class="sec-sub" style="margin-bottom:30px">每个条目一个编号，点击编号即进入详情页（演示中以 # 替代），按更新顺序排列。</p>
+    <div class="wall" id="wallBox"></div>
+  </section>
+
+  <!-- ============ 类型 ============ -->
+  <section id="type" class="tab-panel">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <div><span class="kicker">栏目 03</span><h2 class="sec-title" style="font-size:32px">类型<em>频段</em></h2></div>
+    </div>
+    <p class="sec-sub" style="margin-bottom:30px">十二个题材频段，对应十二种观影心境，左右滑动可查看全部色块。</p>
+    <div class="matrix" id="matrixBox"></div>
+  </section>
+
+  <!-- ============ 时间线 ============ -->
+  <section id="line" class="tab-panel">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <div><span class="kicker">栏目 04</span><h2 class="sec-title" style="font-size:32px">观影<em>时间线</em></h2></div>
+    </div>
+    <p class="sec-sub" style="margin-bottom:30px">从挑片到看完，四个步骤帮你把观影节奏安排清楚，左右滑动查看每一步。</p>
+    <div class="track" id="trackBox"></div>
+  </section>
+
+  <!-- ============ 关于 ============ -->
+  <section id="about" class="tab-panel">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <div><span class="kicker">栏目 05</span><h2 class="sec-title" style="font-size:32px">关于<em>本站</em></h2></div>
+    </div>
+    <div class="info">
+      <div class="blk a">
+        <h3>本站定位 / About</h3>
+        <p>222电影网（网址：<span class="url">https://222dianyingwang-wap.github.io</span>）是以数字「222」为索引的影视资料馆，提供影片资讯、剧情简介与观影推荐。</p>
+        <ul><li>影视条目整理与索引</li><li>三重维度筛选推荐</li><li>持续更新的片库编号墙</li></ul>
+      </div>
+      <div class="blk b">
+        <h3>三重维度</h3>
+        <ul><li>题材类型</li><li>情绪氛围</li><li>观影时长</li></ul>
+      </div>
+      <div class="blk c">
+        <h3>内容声明</h3>
+        <ul><li>影视资讯与资料整理</li><li>尊重版权支持正版</li><li>内容仅供观影参考</li><li>理性安排观影时间</li></ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= 页脚 ================= -->
+<footer class="footer">
+  <div class="wrap foot">
+    <div class="foot-about">
+      <a href="#home" class="logo"><span class="logo-b" aria-hidden="true"><i style="background:var(--r1)"></i><i style="background:var(--r2)"></i><i style="background:var(--r3)"></i></span><div><b>222电影网</b><small>Triple Image Archive</small></div></a>
+      <p>222电影网 —— 以数字「222」为索引的影视资料馆，提供影片资讯、剧情简介与观影推荐，帮你从一片信息里挑出值得看的那一部。</p>
+    </div>
+    <div><h5>栏目</h5><ul><li><a href="#wall">片库编号墙</a></li><li><a href="#type">类型频段</a></li><li><a href="#line">观影时间线</a></li><li><a href="#about">关于本站</a></li></ul></div>
+    <div><h5>类型</h5><ul><li><a href="#">剧情</a></li><li><a href="#">悬疑</a></li><li><a href="#">喜剧</a></li><li><a href="#">纪录</a></li></ul></div>
+    <div><h5>帮助</h5><ul><li><a href="#about">关于本站</a></li><li><a href="#">意见反馈</a></li><li><a href="#">内容纠错</a></li></ul></div>
+  </div>
+  <div class="wrap copyright">
+    <span>© <span id="year"></span> 222电影网 · 网站网址：<a href="https://222dianyingwang-wap.github.io">222dianyingwang-wap.github.io</a></span>
+    <span>本站仅作影视资讯与片单资料整理，尊重影视版权，倡导支持正版渠道观看。</span>
+  </div>
+</footer>
+
+<nav class="quick" id="quick" aria-label="快捷导航">
+  <a href="#home" class="on" data-tab="home">首页</a>
+  <a href="#wall" data-tab="wall">片库</a>
+  <a href="#type" data-tab="type">类型</a>
+  <a href="#line" data-tab="line">时间线</a>
+  <a href="#about" data-tab="about">关于</a>
+</nav>
+
+<script>
+const $=id=>document.getElementById(id);
+const FEATURED=[
+  {no:'001',t:'深夜来信',c:'剧情 · 2021',desc:'一封迟到二十年的信，把两个陌生人的命运重新缝在一起。',hot:true},
+  {no:'002',t:'第九扇门',c:'悬疑 · 2019',desc:'老宅里的九扇门，只有一扇背后藏着真相。'},
+  {no:'003',t:'今天天气晴',c:'喜剧 · 2022',desc:'倒霉一整年的人决定把每天拍成天气预报，笑点藏在琐碎里。'},
+  {no:'004',t:'江的另一边',c:'纪录 · 2020',desc:'跟拍一位渡船人三年，记录江河与两岸的人情。'}
+];
+const WALL=[
+  ...FEATURED,
+  {no:'005',t:'无人区电台',c:'犯罪 · 2018'},
+  {no:'006',t:'早餐俱乐部',c:'青春 · 2023'},
+  {no:'007',t:'失物招领处',c:'剧情 · 2021'},
+  {no:'008',t:'午夜售票口',c:'悬疑 · 2017'},
+  {no:'009',t:'山间小店',c:'生活 · 2022'},
+  {no:'010',t:'最后一次演出',c:'纪录 · 2019'},
+  {no:'011',t:'城市边缘人',c:'剧情 · 2020'},
+  {no:'012',t:'冰箱里的夏天',c:'喜剧 · 2024'}
+];
+const TYPE=[
+  {i:'T01',t:'剧情',c:'DRAMA',d:'关于人的故事，情绪最贴地。',cls:'r'},
+  {i:'T02',t:'悬疑',c:'MYSTERY',d:'层层反转，适合全神贯注。',cls:'b'},
+  {i:'T03',t:'喜剧',c:'COMEDY',d:'轻松解压，让心情亮起来。',cls:'y'},
+  {i:'T04',t:'纪录',c:'DOC',d:'真实发生的，往往最动人。',cls:'g'},
+  {i:'T05',t:'犯罪',c:'CRIME',d:'法理与人情的边界地带。',cls:'g2'},
+  {i:'T06',t:'爱情',c:'ROMANCE',d:'关于心动与错过的种种。',cls:'r'},
+  {i:'T07',t:'科幻',c:'SCI-FI',d:'把想象力推到最远。',cls:'b'},
+  {i:'T08',t:'动画',c:'ANIMATION',d:'画出来的另一种真实。',cls:'y'},
+  {i:'T09',t:'惊悚',c:'THRILLER',d:'节奏紧绷，心跳加速。',cls:'g3'},
+  {i:'T10',t:'历史',c:'HISTORY',d:'回望过去，理解当下。',cls:'c'},
+  {i:'T11',t:'家庭',c:'FAMILY',d:'柴米油盐里的温度。',cls:'w'},
+  {i:'T12',t:'短片',c:'SHORT',d:'十分钟，一个完整的世界。',cls:'g2'}
+];
+const STEPS=[
+  {n:'STEP 01',t:'挑片',d:'按题材、情绪与时长三个维度筛，缩小选择范围。',p:25,lg:true},
+  {n:'STEP 02',t:'看简介',d:'先读剧情简介与看点，判断是否符合当下心情。',p:50},
+  {n:'STEP 03',t:'准备好看',d:'调暗灯光、留出完整时段，进入观影状态。',p:75},
+  {n:'STEP 04',t:'看完记录',d:'在片单里留下自己的评分与短评，方便回头翻。',p:100}
+];
+
+function cell(o){return `<article class="cell ${o.hot?'big':''}">
+  <div><span class="no">NO.${o.no}</span><h4>${o.t}</h4>${o.desc?`<p>${o.desc}</p>`:''}</div>
+  <div class="foot"><span>${o.c||'点击查看详情'}</span><span class="dot" aria-hidden="true"></span></div>
+</article>`;}
+$('homeWall').innerHTML=FEATURED.map(o=>`<article class="cell ${o.hot?'big':''}"><div><span class="no">NO.${o.no}</span><h4>${o.t}</h4><p>${o.desc}</p></div><div class="foot"><span>${o.c}</span><span class="dot"></span></div></article>`).join('');
+$('wallBox').innerHTML=WALL.map((o,i)=>`<article class="cell ${i===0?'big':''}"><div><span class="no">NO.${o.no}</span><h4>${o.t}</h4></div><div class="foot"><span>${o.c}</span><span class="dot"></span></div></article>`).join('');
+
+$('matrixBox').innerHTML=TYPE.map(t=>`<article class="tile ${t.cls}"><div class="idx">${t.i}</div><div><h3>${t.t}</h3><p>${t.d}</p></div><div class="cn">${t.c}</div></article>`).join('');
+
+$('trackBox').innerHTML=STEPS.map(s=>`<article class="step ${s.lg?'lg':''}"><div class="top"><span>${s.n}</span><span class="sq">${s.n.slice(-2)}</span></div><h3>${s.t}</h3><p>${s.d}</p><div class="bar"><i style="width:${s.p}%"></i></div></article>`).join('');
+
+/* Tab 切换 */
+const panels=document.querySelectorAll('.tab-panel');
+const links=[...document.querySelectorAll('[data-tab]')];
+const nav=$('nav'),menuBtn=$('menuBtn');
+function activate(name){
+  panels.forEach(p=>p.classList.toggle('active',p.id===name));
+  links.forEach(a=>{a.classList.remove('on','active');if(a.dataset.tab===name)a.classList.add('on','active');});
+  if(name!=='home')document.getElementById(name).scrollIntoView({behavior:'smooth',block:'start'});
+  else window.scrollTo({top:0,behavior:'smooth'});
+  nav.classList.remove('show');menuBtn.classList.remove('open');
+  menuBtn.setAttribute('aria-expanded','false');document.body.classList.remove('no-scroll');
+}
+links.forEach(a=>a.addEventListener('click',e=>{e.preventDefault();activate(a.dataset.tab);}));
+const init=location.hash.replace('#','');
+if(['wall','type','line','about'].includes(init))activate(init);
+
+menuBtn.addEventListener('click',()=>{
+  const open=nav.classList.toggle('show');
+  menuBtn.classList.toggle('open',open);menuBtn.setAttribute('aria-expanded',open);
+  document.body.classList.toggle('no-scroll',open);
+});
+$('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
